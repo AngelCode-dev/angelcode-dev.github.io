@@ -1,0 +1,1855 @@
+<div style="display: flex; align-items: center; justify-content: space-between">
+  <p>
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowQ0UzMzYyNURGQ0JFNzExOTQ5Q0U0REI0NUU3MTQ0QyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowMkUzQ0Y1NENCRTMxMUU3OTU5QTg2NUZCQzNCNkNDMiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowMkUzQ0Y1M0NCRTMxMUU3OTU5QTg2NUZCQzNCNkNDMiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjBDRTMzNjI1REZDQkU3MTE5NDlDRTREQjQ1RTcxNDRDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjBDRTMzNjI1REZDQkU3MTE5NDlDRTREQjQ1RTcxNDRDIi8+IDwvcmRmOkRlc2NyaXB0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AjoAACCgAwAAAjoAAAR0AABAQAcAAAR0AABAQAcAgIAOAAAI6AAAgIAOAAAI6AAAENABAAABHQAAENABAAABHQAAAjoAACCgAwAAAjoAACCgAwBAQAcAAAR0AABAQAcAAAR0AAAI6AAAgIAOAAAI6AAAgIAOAAABHQAAENABAAABHQAAENABACCgAwAAAjoAACCgAwAAAjoAAAR0AABAQAcAAAR0AABAQAcAgIAOAAAI6AAAgIAOAAAI6AAAgIAOAAABHQAAENABAAABHQAAENABACCgAwAAAjoAACCgAwAAAjoAAAR0AABAQAcAAAR0AABAQAcAgIAOAAAI6AAAgIAOAAAI6AAAENABAAABHQAAENABAAABHQAAAjoAACCgAwAAAjoAACCgAwBAQAcAAAR0AABAQAcAAAR0AAAI6AAAgIAOAAAI6AAAgIAOAAABHQAAENABAAABHQAAENABACCgAwAAAjoAACCgAwAAAjoAACCgAwBAQAcAAAR0AABAQAcAAAR0AAAI6AAAgIAOAAAI6AAAgIAOAAABHQAAENABAAABHQAAENABACCgAwAAAjoAACCgAwAAAjoAAAR0AABAQAcAAAR0AABAQAcAgIAOAAAI6AAAgIAOAAAI6AAAENABAAABHQAAENABAAABHQAAAjoAACCgAwAAAjoAACCgAwBAQAcAAAR0AABAQAcAAAR0AAAI6AAAgIAOAAAI6AAAgIAOAAABHQAAENABAAABHQAAENABAAABHQAAAjoAACCgAwAAAjoAACCgAwBAQAcAAAR0AABAQAcAAAR0AAAI6AAAgIAOAAAI6AAAgIAOAAABHQAAENABAAABHQAAENABACCgAwAAAjoAACCgAwAAAjoAAAR0AABAQAcAAAR0AABAQAcAgIAOAAAI6AAAgIAOAAAI6AAAENABAAABHQAAENABAAABHQAAAjoAACCgAwAAAjoAAMjs/wswAJ1CBpFW/gMLAAAAAElFTkSuQmCC"
+      alt="Descripción de la imagen"
+      width="160"
+    />
+  </p>
+  <p class="western" style="text-align: right">
+    <span style="font-family: Arial, serif"
+      ><span style="font-size: small"
+        ><strong
+          >Contrato de tarjeta de cr&eacute;dito Banco Naci&oacute;nal de Costa Rica</strong
+        ></span
+      ></span
+    >
+  </p>
+</div>
+<p class="western" align="justify">
+  <span style="font-size: small"
+    ><br />Este documento constituye el contrato oficial del Banco Naci&oacute;nal de Costa Rica
+    para la utilizaci&oacute;n del servicio de&nbsp;</span
+  ><span style="font-size: small"
+    ><strong>l&iacute;nea de cr&eacute;dito revolutiva</strong></span
+  ><span style="font-size: small"> de una tarjeta de cr&eacute;dito del </span
+  ><span style="font-size: small"><strong>Banco Naci&oacute;nal de Costa Rica</strong></span
+  ><span style="font-size: small">
+    con la Franquicia Internacional que &eacute;ste disponga, el</span
+  ><span style="font-size: small"><strong> </strong></span
+  ><span style="font-size: small"
+    >cual se regir&aacute; por las cl&aacute;usulas que fueron debidamente
+    aprobadas y consentidas </span
+  ><span style="font-size: small"
+    ><strong
+      >por la Gerencia General mediante resoluci&oacute;n de las ocho horas y
+      treinta minutos del tres de junio del 2022</strong
+    ></span
+  ><span style="font-size: small">
+    y se integra con las disposiciones del C&oacute;digo</span
+  ><span style="font-size: small"><strong> </strong></span
+  ><span style="font-size: small"
+    >de Comercio, la Ley Org&aacute;nica del Sistema Bancario Nacional, la Ley
+    Org&aacute;nica del Banco Central de Costa Rica, la Ley de Certificados,
+    Firmas Digitales y Documentos Electr&oacute;nicos, su Reglamento y el
+    C&oacute;digo Civil, la </span
+  ><span style="font-size: small"
+    ><em
+      >Ley de la Promoci&oacute;n de la Competencia y Defensa Efectiva del
+      Consumidor</em
+    ></span
+  ><span style="font-size: small">, </span
+  ><span style="font-size: small"
+    ><em>Reglamento de Tarjetas de Cr&eacute;dito</em></span
+  ><span style="font-size: small">, </span
+  ><span style="font-size: small"><em>Decreto Ejecutivo 35867 MEIC</em></span
+  ><span style="font-size: small"> del</span
+  ><span style="font-size: small"><em> </em></span
+  ><span style="font-size: small"
+    >veinticuatro de marzo del a&ntilde;o dos mil diez, las disposiciones
+    reglamentarias del Banco, en especial el </span
+  ><span style="font-size: small"
+    ><em
+      >Reglamento de Tarifas y Condiciones para los Servicios del Banco de Costa
+      Rica</em
+    ></span
+  ><span style="font-size: small">, el </span
+  ><span style="font-size: small"
+    ><em>Reglamento de Servicios de Banca Electr&oacute;nica</em></span
+  ><span style="font-size: small">, los</span
+  ><span style="font-size: small"
+    ><em> Reglamentos de Premios y Promociones</em></span
+  ><span style="font-size: small"
+    >, as&iacute; como con las disposiciones reglamentarias del Banco. En
+    solicitud de este</span
+  ><span style="font-size: small"><em> </em></span
+  ><span style="font-size: small">servicio comparece el se&ntilde;or (a)</span
+  ><span style="font-family: Times New Roman, serif"
+    ><span style="font-size: small">
+      <strong>{{first_name}} {{last_name}}</strong>, c&eacute;dula
+      <strong>{{user_id}}</strong></span
+    ></span
+  ><span style="font-size: small"
+    >&nbsp;en adelante para los efectos de este contrato denominado </span
+  ><span style="font-size: small"
+    ><strong>&ldquo;EL TARJETAHABIENTE&rdquo;;</strong></span
+  ><span style="font-size: small">
+    quien manifiesta que acepta todas las regulaciones y las siguientes
+    cl&aacute;usulas que rigen para el</span
+  ><span style="font-size: small"><strong> </strong></span
+  ><span style="font-size: small"
+    >mismo conforme lo ha establecido el Banco y que cuyos alcances y contenido
+    declaramos conocer y aceptar para toda clase de efectos</span
+  >
+</p>
+<p class="western">
+  <span style="font-size: small"
+    ><strong>CONDICIONES PROPIAS DEL SERVICIO</strong></span
+  >
+</p>
+<ol>
+  <li>
+    <p class="western" align="justify">
+      <span style="font-size: small"><strong>LIMITE DE CREDITO.</strong></span
+      ><span style="font-size: small">
+        En esta fecha el Banco Emisor ha abierto al Tarjetahabiente una
+        l&iacute;nea de cr&eacute;dito revolutiva para el uso mediante tarjeta
+        de cr&eacute;dito en d&oacute;lares, moneda de curso legal de los
+        Estados Unidos de Am&eacute;rica, hasta por la suma Registre el monto
+        en</span
+      ><span style="font-family: Times New Roman, serif"
+        ><span style="font-size: small">d</span></span
+      ><span style="font-size: small">
+        letras moneda d&oacute;lares en su equivalente en colones Registre el
+        monto en letras moneda colones) , que el Tarjetahabiente podr&aacute;
+        utilizar mediante la presentaci&oacute;n de la tarjeta de cr&eacute;dito
+        del Banco Naci&oacute;nal de Costa Rica, y la Franquicia Internacional correspondiente
+        para la adquisici&oacute;n de bienes y servicios en los establecimientos
+        afiliados al sistema de la Franquicia Internacional respectiva, ya sea
+        en el territorio nacional o en el extranjero. En el l&iacute;mite de
+        cr&eacute;dito quedan comprendidos los intereses, comisiones, cargos y
+        dem&aacute;s gastos que se originen con motivo del uso de la tarjeta
+        concedida y de las gestiones de cobro del Banco.</span
+      >
+    </p>
+  </li>
+</ol>
+<p class="western" style="padding-left: 40px" align="justify">
+  <span style="font-size: small"
+    >El Banco podr&aacute; ampliar o disminuir este l&iacute;mite de
+    cr&eacute;dito de acuerdo con el buen uso y manejo de la cuenta, lo cual el
+    deudor declara conocer y aceptar en forma expresa y los garantes (si los
+    hubiere) consienten expresamente sin necesidad de que a ellos se les
+    consulte o se les notifique. Cuando ocurra alg&uacute;n cambio, el Banco se
+    obliga a hacerlo del conocimiento del cliente con 30 d&iacute;as
+    h&aacute;biles de anticipaci&oacute;n a su entrada en vigencia,
+    comunic&aacute;ndoselo por la v&iacute;a que &eacute;ste haya elegido al
+    efecto, para que manifieste si las acepta o no. Vencido el plazo de 60
+    d&iacute;as posteriores a su notificaci&oacute;n y de no recibir
+    manifestaci&oacute;n en contrario del cliente, el Banco asumir&aacute; la
+    conformidad del mismo, sin perjuicio de lo establecido en relaci&oacute;n
+    con las causas de terminaci&oacute;n anticipada de este contrato</span
+  >
+</p>
+<ol start="2">
+  <li>
+    <p class="western" align="justify">
+      <span style="font-size: small"
+        ><strong>VIGENCIA DEL CONTRATO</strong></span
+      ><span style="font-size: small"
+        >. El plazo de este contrato ser&aacute; de un a&ntilde;o a partir de
+        hoy, el cual podr&aacute; ser prorrogado por per&iacute;odos iguales,
+        seg&uacute;n lo establezca el Banco Emisor, salvo que alguna de las
+        partes comunique a la otra por escrito su decisi&oacute;n de no
+        renovarlo, al menos un mes antes de que opere el respectivo vencimiento.
+        Lo anterior sin perjuicio de lo estipulado en relaci&oacute;n a la
+        finalizaci&oacute;n anticipada del contrato. El Tarjetahabiente
+        deber&aacute; notificar al Banco Emisor aquella decisi&oacute;n por
+        escrito, mediante carta que cursar&aacute; a la oficina que atienda los
+        tr&aacute;mites de su tarjeta de cr&eacute;dito en el Banco Emisor. Por
+        su parte, si &eacute;ste tomara la decisi&oacute;n de no renovar el
+        contrato, deber&aacute; comunicarlo as&iacute; al Tarjetahabiente en el
+        siguiente estado de cuenta, o mediante comunicaci&oacute;n a la
+        direcci&oacute;n o medio que este hubiere se&ntilde;alado para tales
+        efectos. Independientemente de cu&aacute;l de las partes tome tal
+        decisi&oacute;n, el cliente deber&aacute; cancelar todas las comisiones
+        y costos pendientes del producto vigente.</span
+      >
+    </p>
+  </li>
+  
+</ol>
+<ol start="3">
+    <li>
+      <p class="western" align="justify">
+        <span style="font-size: small"
+          ><strong
+            >FECHA DE CORTE DE LAS TRANSACCIONES DEL PERIODO.</strong
+          ></span
+        ><span style="font-size: small">
+          El tarjetahabiente declara conocer que la fecha programada para el
+          cierre contable de las operaciones utilizada para la emisi&oacute;n
+          del estado de cuenta es <strong>{{closed_date}} </strong>de cada
+          mes.</span
+        >
+      </p>
+    </li>
+    <li>
+      <p class="western">
+        <span style="font-size: small"><strong>PERIODO DE GRACIA.</strong></span
+        ><span style="font-size: small">
+          El tarjetahabiente declara conocer que el periodo de gracia para
+          realizar el pago de contado sin cargos de intereses corrientes del
+          periodo de compras del mes es de
+          <strong>{{graced_period}}&nbsp;</strong>d&iacute;as.</span
+        >
+      </p>
+    </li>
+    <li>
+      <p class="western">
+        <span style="font-size: small"
+          ><strong>PLAZO DEL FINANCIAMIENTO</strong></span
+        ><span style="font-size: small"
+          >. Mientras el contrato se encuentre vigente, el tarjetahabiente
+          contar&aacute; con un plazo de financiamiento de
+          <strong>{{financing_term}}</strong> meses, para realizar el pago de
+          los montos utilizados de la l&iacute;nea de cr&eacute;dito.</span
+        >
+      </p>
+      <p class="western">
+        <span style="font-size: small"
+          ><strong>CONDICIONES GENERALES</strong></span
+        >
+      </p>
+    </li>
+    <li>
+      <p class="western">
+        <span style="font-size: small"
+          ><strong
+            >USO PERSONAL Y PRESENTACI&Oacute;N DE LA TARJETA.</strong
+          ></span
+        ><span style="font-size: small">
+          El Tarjetahabiente declara conocer y acepta que la tarjeta de
+          cr&eacute;dito es de uso estrictamente personal, sin que su empleo sea
+          permitido o delegado en forma alguna a terceras personas, a&uacute;n
+          cuando sean sus representantes legales, mandatarios o apoderados.
+          Trat&aacute;ndose de servicios que presta el Banco Emisor por los
+          diferentes medios electr&oacute;nicos; el Tarjetahabiente podr&aacute;
+          servirse de ellos, utilizando la tarjeta y el n&uacute;mero de clave
+          que se le ha proporcionado, la cual es de &iacute;ndole personal y
+          secreta. En todo caso, el Tarjetahabiente ser&aacute; responsable de
+          los cargos que se hagan con su tarjeta y la clave confidencial, tanto
+          en el territorio nacional como en el extranjero, seg&uacute;n lo que
+          se ha establecido en el </span
+        ><span style="font-size: small"
+          ><em
+            >Reglamento para los Servicios de Banca Electr&oacute;nica</em
+          ></span
+        ><span style="font-size: small">.</span>
+      </p>
+    </li>
+    <li>
+      <p class="western">
+        <span style="font-size: small"
+          ><strong>DISPOSICI&Oacute;N DEL CREDITO.</strong></span
+        ><span style="font-size: small">
+          El Tarjetahabiente podr&aacute; disponer de la facilidad crediticia,
+          seg&uacute;n la tarjeta autorizada, de la siguiente forma:</span
+        >
+      </p>
+      <ol start="6">
+        <ol type="a">
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                >Uso local de la tarjeta: mediante la suscripci&oacute;n de
+                facturas o comprobantes afines, ya sea para pagar el importe de
+                mercanc&iacute;as, consumos o servicios en los comercios
+                afiliados al sistema de tarjetas de cr&eacute;dito de la
+                Franquicia Internacional a la que quede asociada la tarjeta, o
+                para obtener sumas en efectivo en las oficinas del Banco Emisor
+                o en otras entidades, o comercios que &eacute;ste indique, todo
+                ello dentro de las condiciones que el Banco Emisor establezca y
+                con aplicaci&oacute;n de las comisiones establecidas en el </span
+              ><span style="font-size: small"
+                ><em
+                  >Reglamento de Tarifas y Condiciones para los Servicios del
+                  Banco Naci&oacute;nal de Costa Rica</em
+                ></span
+              ><span style="font-size: small">.</span>
+            </p>
+          </li>
+        </ol>
+      </ol>
+      <ol start="6">
+        <ol start="2" type="a">
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                >Uso de la tarjeta de cr&eacute;dito en el extranjero: mediante
+                la firma de los documentos, facturas o comprobantes afines que
+                al efecto se utilicen internacionalmente, ya sea para pagar el
+                importe de las mercanc&iacute;as, consumos o servicios en los
+                comercios afiliados a la Franquicia Internacional con que se
+                asocie la tarjeta, o para obtener sumas en efectivo en los
+                Bancos afiliados a dicho sistema, en este &uacute;ltimo caso
+                dentro de los l&iacute;mites, condiciones y con
+                aplicaci&oacute;n de las comisiones que las Franquicias
+                Internacionales tengan establecidas.</span
+              >
+            </p>
+          </li>
+        </ol>
+      </ol>
+      <ol start="6">
+        <ol start="3" type="a">
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                >Obtenci&oacute;n de sumas en efectivo: ya sea en ventanilla o
+                por medio de los cajeros autom&aacute;ticos, dispensadores de
+                efectivo, u otros equipos del propio Banco con aplicaci&oacute;n
+                de las condiciones que &eacute;ste indique y de las comisiones
+                establecidas en el </span
+              ><span style="font-size: small"
+                ><em
+                  >Reglamento de Tarifas y Condiciones para los Servicios del
+                  Banco Naci&oacute;nal de Costa Rica</em
+                ></span
+              ><span style="font-size: small">.</span>
+            </p>
+          </li>
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                >Tambi&eacute;n a trav&eacute;s de los mismos mecanismos en
+                otras entidades afiliadas al sistema de la Franquicia
+                Internacional respectiva, dentro de los l&iacute;mites,
+                condiciones que &eacute;stos establezcan seg&uacute;n el caso,
+                bajo su propia cuenta y riesgo; en el entendido de que el
+                Tarjetahabiente aceptar&aacute; como v&aacute;lidos todos los
+                retiros de dinero que aparezcan efectuados con su tarjeta, por
+                cualquiera de estos medios y reconoce como prueba de las
+                transacciones, el texto y los montos que indiquen los
+                correspondientes comprobantes.</span
+              >
+            </p>
+          </li>
+        </ol>
+      </ol>
+      <ol start="6">
+        <ol start="5" type="a">
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                >Obtenci&oacute;n de servicios por la v&iacute;a
+                telef&oacute;nica, electr&oacute;nica, o por Internet: En este
+                caso, el Tarjetahabiente declara y acepta que en virtud de la
+                naturaleza de estas transacciones no existir&aacute; un
+                comprobante firmado por &eacute;l o por la(s) persona(s)
+                titular(es), de las tarjetas adicionales, por lo que autoriza al
+                Banco Emisor para cargar el importe respectivo en su cuenta con
+                solo el reporte de la transacci&oacute;n.</span
+              >
+            </p>
+          </li>
+        </ol>
+      </ol>
+      <ol start="6">
+        <ol start="6" type="a">
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                >Mediante el pago que efect&uacute;e el Banco Emisor en nombre y
+                por cuenta del Tarjetahabiente de aquellos bienes, servicios,
+                impuestos u otros conceptos seg&uacute;n las instrucciones
+                expresas del Tarjetahabiente, o titulares de las tarjetas
+                adicionales que deber&aacute;n hacerse constar por escrito y las
+                cuales formar&aacute;n parte integral de este </span
+              ><span style="font-size: small">contrato.<br /></span>
+            </p>
+          </li>
+          <li>
+            <span style="font-size: small"
+              ><span style="font-size: small"
+                ><span style="font-size: small"
+                  ><span style="font-size: small"
+                    >El tarjetahabiente podr&aacute; realizar avances de
+                    efectivo con su tarjeta de cr&eacute;dito, en los cajeros
+                    autom&aacute;ticos propios de la red BCR, y en aquellos con
+                    los que el BCR tenga una alianza, lo cual ser&aacute;
+                    comunicado a los clientes a trav&eacute;s de la publicidad
+                    que se difunda en los medios de comunicaci&oacute;n, o por
+                    otros medios. Solamente respecto de estos dispositivos, el
+                    BCR podr&aacute; garantizar el adecuado funcionamiento y
+                    controlar las medidas de&nbsp;
+                  </span></span
+                ></span
+              ></span
+            ><span style="font-size: 10pt"
+              >seguridad que fueren pertinentes. Los cajeros autom&aacute;ticos,
+              en los cuales fuere posible la utilizaci&oacute;n de la tarjeta de
+              cr&eacute;dito del BCR, exclusivamente en virtud de que se
+              encuentran relacionados con la marca de la franquicia
+              internacional, pero que no pertenecen al BCR ni a ninguna red
+              relacionada con &eacute;ste, est&aacute;n sujetos las condiciones
+              de operaci&oacute;n y a las medidas de seguridad de sus operadores
+              sobre las cu&aacute;les el BCR no tiene injerencia, el BCR no
+              recomienda la utilizaci&oacute;n de estos dispositivos, por lo que
+              el empleo que de ellos haga el cliente para la dispensa de
+              efectivo u otros servicios ser&aacute; por cuenta y riesgo del
+              tarjetahabiente, sirviendo esta advertencia para eximir de toda
+              responsabilidad al BCR.</span
+            >
+          </li>
+        </ol>
+      </ol>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>L&Iacute;MITE EN EL USO DE LA TARJETA.</strong></span
+            ><span style="font-size: small">
+              El Tarjetahabiente declara conocer que el monto total de las
+              transacciones que haga al amparo de esta l&iacute;nea de
+              cr&eacute;dito revolutiva, m&aacute;s los correspondientes
+              intereses, comisiones, cargos y dem&aacute;s gastos originados con
+              el uso de la tarjeta, ya sea en moneda nacional o extranjera, en
+              ning&uacute;n momento deber&aacute; exceder el l&iacute;mite
+              autorizado por el Banco Emisor para esta l&iacute;nea de
+              cr&eacute;dito conforme a este contrato, en el entendido de que si
+              se produjere un sobregiro en el l&iacute;mite autorizado, el Banco
+              Emisor podr&aacute; suspender o bien cancelar la facilidad
+              crediticia, y adem&aacute;s tener por vencido el plazo
+              anticipadamente y exigir totalmente lo adeudado sin requerimiento
+              ni avisos previos.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong
+                >OBLIGACIONES CON TRANSACCIONES EN MONEDA EXTRANJERA:</strong
+              ></span
+            ><span style="font-size: small">
+              El Tarjetahabiente declara conocer y expresamente acepta, que
+              aquellas transacciones efectuadas con la tarjeta de cr&eacute;dito
+              internacional en moneda extranjera, ser&aacute;n cargadas contra
+              la cuenta como una obligaci&oacute;n en d&oacute;lares moneda de
+              curso legal de los Estados Unidos de Am&eacute;rica; no obstante
+              lo anterior, en el momento de efectuar el cobro de estas
+              transacciones, el Banco Emisor lo efectuar&aacute; en moneda local
+              aplicando el tipo de cambio que se encuentre vigente para la venta
+              de d&oacute;lares del Banco Naci&oacute;nal de Costa Rica, a la fecha de recibo
+              del cobro de la transacci&oacute;n. Queda entendido y aceptado que
+              este sistema podr&aacute; ser modificado en cualquier momento,
+              para lo cual se notificar&aacute; al titular de la cuenta a fin de
+              que pueda ejercer las prerrogativas pactadas para estos
+              casos.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>CARGOS A LA CUENTA DEL TARJETAHABIENTE.</strong></span
+            ><span style="font-size: small">
+              El Banco Emisor cargar&aacute; a la cuenta del Tarjetahabiente las
+              transacciones que se efect&uacute;en tanto en el territorio
+              nacional como en el extranjero, en la fecha en que los comercios
+              afiliados al sistema de la Franquicia Internacional
+              correspondiente presenten al Banco Emisor o a los emisores
+              facultados, las correspondientes facturas para su reembolso.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>CASOS DE NO ADMISI&Oacute;N DE LA TARJETA.</strong></span
+            ><span style="font-size: small">
+              El Banco Emisor no asumir&aacute; ninguna responsabilidad en el
+              caso de que alguna de las empresas, instituciones, negocios y
+              dem&aacute;s afiliados al sistema de tarjetas de cr&eacute;dito de
+              la Franquicia Internacional a la que quede asociada la tarjeta,
+              tanto en el territorio nacional como en el extranjero, se
+              reh&uacute;se en alg&uacute;n momento a admitir el uso de la
+              tarjeta de cr&eacute;dito, o cuando el Tarjetahabiente no pueda
+              efectuar transacciones por desperfectos o por la supresi&oacute;n
+              del servicio, ya sea en los cajeros autom&aacute;ticos o en
+              cualesquiera de los actuales equipos o medios, o los que se
+              utilicen en el futuro.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>DIVERGENCIAS CON COMERCIOS AFILIADOS.</strong></span
+            ><span style="font-size: small">
+              Las partes declaran conocer y aceptan que el Banco Emisor no
+              asumir&aacute; ninguna responsabilidad ni obligaci&oacute;n por la
+              calidad, cantidad, o cualquier caracter&iacute;stica o defecto de
+              las mercanc&iacute;as o servicios que se adquieran u obtengan
+              mediante el uso de la tarjeta, ya que, en los respectivos
+              contratos para obtener tales mercanc&iacute;as o servicios, el
+              Banco Emisor es un tercero. Los correspondientes reclamos, si los
+              hubiere, deber&aacute;n ser dirigidos contra el vendedor o
+              prestador del servicio, sin que puedan oponerse al Banco Emisor
+              excepciones derivadas de esas relaciones contractuales, cuando
+              &eacute;ste cobre las respectivas facturas.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>ESTADOS DE CUENTA.</strong></span
+            ><span style="font-size: small">
+              El Banco Emisor enviar&aacute; al Tarjetahabiente mensualmente por
+              el medio electr&oacute;nico que &eacute;ste elija y hubiere
+              comunicado al Banco, un estado de cuenta en el que se
+              indicar&aacute;n las transacciones realizadas tanto </span
+            ><span style="font-size: small"
+              >en el territorio nacional como en el extranjero, detallando las
+              cantidades cargadas y abonadas desde el &uacute;ltimo corte hasta
+              la fecha del estado inclusive, as&iacute; como la dem&aacute;s
+              informaci&oacute;n requerida de conformidad con el </span
+            ><span style="font-size: small"
+              ><em
+                >Reglamento de Tarjetas de cr&eacute;dito y d&eacute;bito</em
+              ></span
+            ><span style="font-size: small"
+              >. Su env&iacute;o se har&aacute; dentro de los cinco d&iacute;as
+              h&aacute;biles siguientes al corte mensual de la</span
+            ><span style="font-size: small"><em> </em></span
+            ><span style="font-size: small"
+              >cuenta. Si dentro de los sesenta d&iacute;as h&aacute;biles
+              contados a partir de la fecha de corte y el momento en que se
+              tiene conocimiento del hecho reclamado, el Tarjetahabiente no
+              objeta el estado de su cuenta, se tendr&aacute;n por reconocidas
+              las cuentas en la forma presentada y aceptada el saldo que se
+              indique. Si el Tarjetahabiente no recibiere los estados de cuenta
+              en el plazo convenido y aun as&iacute; no lo hubiere reportado al
+              Banco, se obliga a consultar su saldo deudor a trav&eacute;s de
+              los medios electr&oacute;nicos que el Banco haya puesto a su
+              disposici&oacute;n o acudiendo a cualquiera de sus oficinas; en el
+              entendido que no ser&aacute; admisible como raz&oacute;n para
+              justificar la omisi&oacute;n de pago y las consecuencias que de
+              ello se deriven, el no haber recibido su estado de cuenta. El
+              Tarjetahabiente queda obligado a reportar cualquier cambio en el
+              medio al cual deban enviarse los estados de cuenta y cualquier
+              otro tipo de documentaci&oacute;n, por lo que no podr&aacute;
+              efectuar reclamo alguno, si no ha cumplido oportunamente con esta
+              obligaci&oacute;n. El Banco Emisor se reserva el derecho de no
+              emitir estados de cuenta cuando el saldo deudor sea igual a
+              cero.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>IMPUGNACION DE CARGOS NO AUTORIZADOS.</strong></span
+            ><span style="font-size: small">
+              En caso de impugnaci&oacute;n de cargos no autorizados, el
+              Tarjetahabiente se obliga a notificar al Banco Emisor,
+              seg&uacute;n el plazo indicado en el art&iacute;culo anterior, en
+              primera instancia por la v&iacute;a telef&oacute;nica, o por
+              cualquiera de los medios que &eacute;ste hubiere puesto a su
+              disposici&oacute;n, y posteriormente por escrito
+              dirigi&eacute;ndose a cualquiera de las oficinas del Banco Emisor.
+              El reclamo debe indicar, el nombre, n&uacute;mero de tarjeta,
+              comercio y monto de la transacci&oacute;n, descripci&oacute;n
+              detallada del reclamo y lugar para notificaci&oacute;n. Si el
+              tarjetahabiente, teniendo los elementos necesarios demora la
+              interposici&oacute;n de su reclamo, luego de transcurrido el plazo
+              de 60 d&iacute;as, el Banco resolver&aacute; con los elementos que
+              tenga a su alcance, relevando de responsabilidad al Banco por la
+              no obtenci&oacute;n de la documentaci&oacute;n que respalde la
+              transacci&oacute;n.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>CONDICIONES DE PAGO.</strong></span
+            ><span style="font-size: small">
+              El Tarjetahabiente deber&aacute; hacer un pago cada mes,
+              utilizando los medios electr&oacute;nicos que El Banco emisor
+              pondr&aacute; a su disposici&oacute;n o acudiendo a cualquiera de
+              sus oficinas, pudiendo escoger entre el pago de contado o el pago
+              m&iacute;nimo que se le indica en su estado de cuenta a m&aacute;s
+              tardar en la fecha l&iacute;mite de pago que se detalla en dicho
+              estado de cuenta, conforme a la modalidad de pago por la que
+              opte:</span
+            >
+          </p>
+          <ol start="15">
+            <ol type="a">
+              <li>
+                <p class="western" align="justify">
+                  <span style="font-size: small"
+                    ><strong>Pago de contado:</strong></span
+                  ><span style="font-size: small">
+                    Se compone de la sumatoria de todas las compras
+                    contabilizadas, avances de efectivo y/o cualquier otro cargo
+                    correspondiente, realizados con la tarjeta de
+                    cr&eacute;dito, durante el periodo comprendido entre el
+                    d&iacute;a siguiente a la fecha de corte anterior y el
+                    d&iacute;a de corte del siguiente mes; adem&aacute;s se
+                    deben contemplar los intereses corrientes, que se incluyen
+                    dentro del pago de contado, para los casos donde el
+                    tarjetahabiente se ha financiado en el periodo anterior.
+                    Realizar el pago de contado implica no incurrir en el pago
+                    de intereses (por compras o cualquier otro cargo), es decir
+                    efectuar un pago que cubra la totalidad del monto adeudado a
+                    la fecha de corte, a m&aacute;s tardar en la fecha
+                    l&iacute;mite para el pago de contado que se indicar&aacute;
+                    en el respectivo estado de cuenta. Sin embargo, a&uacute;n
+                    cuando el Tarjetahabiente efect&uacute;e su pago de contado,
+                    en todos los casos de retiros o avances de efectivo
+                    reconocer&aacute; y pagar&aacute; al Banco Emisor todos los
+                    cargos correspondientes a intereses por el per&iacute;odo
+                    durante el cual sean utilizados estos recursos hasta su
+                    reembolso total. Si el retiro se efect&uacute;a
+                    despu&eacute;s de la fecha de corte, los cargos por
+                    intereses correr&aacute;n desde la fecha de retiro y
+                    aparecer&aacute;n en el siguiente estado.</span
+                  >
+                </p>
+              </li>
+            </ol>
+          </ol>
+          <p class="western">&nbsp;</p>
+          <ol start="15">
+            <ol start="2" type="a">
+              <li>
+                <p class="western" align="justify">
+                  <span style="font-size: small"
+                    ><strong>Pago m&iacute;nimo:</strong></span
+                  ><span style="font-size: small">
+                    Optar por el financiamiento y amortizar su deuda mediante
+                    cuotas mensuales, cuyo monto m&iacute;nimo se
+                    indicar&aacute; en el respectivo estado de cuenta mensual
+                    bajo el concepto de "Pago M&iacute;nimo", en cuyo caso
+                    reconocer&aacute; al Banco intereses de financiamiento sobre
+                    los saldos insolutos. Se considera saldo insoluto a la nueva
+                    obligaci&oacute;n que prorroga la anterior. El pago parcial
+                    se har&aacute; antes, o en la fecha l&iacute;mite de pago
+                    que aparezca en el correspondiente estado de cuenta, de lo
+                    contrario, se dar&aacute; por vencida la tarjeta. El pago
+                    m&iacute;nimo se compone del monto que cubre la
+                    amortizaci&oacute;n al principal seg&uacute;n el plazo de
+                    financiamiento, m&aacute;s los intereses financieros a la
+                    tasa vigente, las comisiones y los cargos vigentes, que el
+                    tarjetahabiente paga al </span
+                  ><span style="font-size: small"
+                    >emisor por el uso de la tarjeta de cr&eacute;dito,
+                    calculados para la cantidad de d&iacute;as transcurridos
+                    desde que se efectuaron hasta la fecha de corte, o en su
+                    defecto entre fechas de corte.</span
+                  >
+                </p>
+              </li>
+            </ol>
+          </ol>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>CARGOS Y COMISIONES:</strong></span
+            ><span style="font-size: small">
+              El tarjetahabiente reconoce y acepta expresamente que las
+              comisiones que el Banco cobrar&aacute; por este servicio
+              ser&aacute;n las establecidas en el Reglamento de Tarifas y
+              Condiciones para los Servicios del Banco Naci&oacute;nal de Costa Rica y que las
+              mismas podr&aacute;n ser ajustadas conforme las variaciones que se
+              introduzcan en el mismo. Con este conocimiento, en este acto el
+              cliente autoriza al Banco a cargar autom&aacute;ticamente el
+              importe correspondiente de dichos cargos o comisiones y reflejar
+              en el estado de cuenta la tarifa respectiva para su
+              cancelaci&oacute;n. En el caso que su cuenta no disponga de saldo
+              suficiente, el cliente tambi&eacute;n autoriza al Banco para
+              realizar el sobregiro correspondiente de su l&iacute;mite para
+              aplicar y compensar el pago de dichas comisiones o cargos. Con lo
+              anterior mencionado, el Tarjetahabiente autoriza en forma expresa
+              e irrevocablemente, al Banco Emisor a cargar a su cuenta las
+              cantidades que se deriven de los siguientes conceptos:</span
+            >
+          </p>
+        </li>
+
+      <ol start="17">
+        <ol type="a">
+          <li>
+            <p class="western">
+              <span style="font-size: small"
+                ><strong>Compras y retiros de efectivo</strong></span
+              ><span style="font-size: small"
+                >: El importe correspondiente por el uso del cr&eacute;dito
+                otorgado por tales conceptos.</span
+              >
+            </p>
+          </li>
+        </ol>
+      </ol>
+      <ol start="17">
+        <ol start="2" type="a">
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                ><strong
+                  >Comisi&oacute;n avances de efectivo Banco de Costa
+                  Rica</strong
+                ></span
+              ><span style="font-size: small"
+                >: La comisi&oacute;n porcentual vigente en su momento conforme
+                al Reglamento de Tarifas y Condiciones para los Servicios del
+                Banco Naci&oacute;nal de Costa Rica, cobrada sobre el importe de las
+                transacciones que haga en efectivo, tanto en las oficinas del
+                Banco Emisor como en los cajeros autom&aacute;ticos,
+                dispensadores de efectivo u otros equipos.</span
+              >
+            </p>
+          </li>
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                ><strong
+                  >Comisi&oacute;n avances de efectivo otros miembros de las
+                  Franquicias Internacionales</strong
+                ></span
+              ><span style="font-size: small"
+                >: La comisi&oacute;n que tengan establecida las entidades
+                asociadas al sistema de las Franquicias Internacionales, para
+                los avances de efectivo que se realicen en las oficinas de
+                estas, o en los cajeros autom&aacute;ticos, dispensadores de
+                efectivo, u otros equipos.</span
+              >
+            </p>
+          </li>
+        </ol>
+      </ol>
+      <ol start="17">
+        <ol start="4" type="a">
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                ><strong
+                  >Comisi&oacute;n facturaci&oacute;n en el exterior:</strong
+                ></span
+              ><span style="font-size: small">
+                La comisi&oacute;n que en su caso aplique la Franquicia
+                Internacional y el Banco Naci&oacute;nal de Costa Rica por gastos de
+                administraci&oacute;n o por concepto similar, calculada sobre
+                las transacciones que se efect&uacute;en en el extranjero.</span
+              >
+            </p>
+          </li>
+        </ol>
+      </ol>
+      <ol start="17">
+        <ol start="5" type="a">
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                ><strong>Cargos por intereses corrientes:</strong></span
+              ><span style="font-size: small">
+                El Banco Emisor podr&aacute; cargar los intereses a las sumas
+                financiadas, la tasa establecida para el rubro de la tarjeta de
+                cr&eacute;dito de la Franquicia Internacional y el BANCO DE
+                COSTA RICA, seg&uacute;n el tipo de tarjeta, la cual es variable
+                y ajustable mensualmente, aplicable sobre el principal a partir
+                de la fecha de ingreso de las transacciones por el uso de la
+                tarjeta y hasta que se realice el pago efectivo. Se deja
+                constancia de que, la tasa de inter&eacute;s vigente actualmente
+                es del <strong>{{interest_rate}} </strong></span
+              ><span style="font-size: small"
+                ><strong>anual variable y ajustable mensualmente</strong></span
+              ><span style="font-size: small"><strong>.</strong></span
+              ><span style="font-size: small">
+                Que el Banco Emisor queda facultado para variar y ajustar la
+                tasa de inter&eacute;s aqu&iacute; pactada por todo el plazo de
+                esta l&iacute;nea de cr&eacute;dito revolutiva y sus
+                pr&oacute;rrogas, para ajustarla a la que se haya establecido y
+                que rija para este tipo de operaciones, y que est&eacute;
+                vigente de conformidad con la normativa aplicable, bastando para
+                toda clase de efectos legales, judiciales y administrativos, la
+                sola indicaci&oacute;n del Banco Emisor para comprobar que las
+                tasas de inter&eacute;s corriente y moratorio que &eacute;ste
+                se&ntilde;ale son las que corresponde pagar. Las variaciones se
+                producir&aacute;n cuando lo determine el Banco Emisor y no
+                podr&aacute;n exceder en veinte puntos porcentuales sobre la
+                tasa </span
+              ><span style="font-size: small"><em>Prime Rate</em></span
+              ><span style="font-size: small">
+                de los Estados Unidos de Am&eacute;rica, fijada por el CITIBANK
+                y que publica el Banco Central de Costa Rica. (o treinta puntos
+                porcentuales sobre la Tasa B&aacute;sica Pasiva que publica el
+                Banco Central de Costa Rica, vigente al momento del ajuste). En
+                las oportunidades en que la tasa de inter&eacute;s corriente se
+                modifique, los intereses moratorios quedar&aacute;n
+                tambi&eacute;n ajustados conforme a lo pactado. Para efectos
+                informativos de las partes se deja constancia de que la
+                metodolog&iacute;a de c&aacute;lculo de los intereses que rige
+                para el presente contrato corresponde al sistema de d&iacute;as
+                exactos-a&ntilde;o, ordinario </span
+              ><s><span style="font-size: small">,</span></s
+              ><span style="font-size: small">
+                entendiendo este como la relaci&oacute;n del a&ntilde;o natural
+                de trescientos sesenta d&iacute;as entre a&ntilde;o natural de
+                trescientos sesenta d&iacute;as, cuya f&oacute;rmula es la
+                siguiente: I=S multiplicado por (i dividido entre trescientos
+                sesenta multiplicado por n) ; en donde I es la suma
+                correspondiente al inter&eacute;s establecido por el Banco para
+                la facilidad crediticia, trescientos sesenta es el n&uacute;mero
+                de d&iacute;as del a&ntilde;o comercial, y n son los d&iacute;as
+                naturales exactos del per&iacute;odo que se est&aacute;
+                cobrando. Las partes aceptan expresamente la utilizaci&oacute;n
+                de esta f&oacute;rmula para el c&aacute;lculo de los
+                intereses.</span
+              >
+            </p>
+          </li>
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                ><strong>Cargos por sobregiro.</strong></span
+              ><span style="font-size: small">
+                En caso de sobregiros se cobrar&aacute;n intereses corrientes y
+                moratorios iguales a la tasa que corresponda pagar, calculados
+                sobre el saldo insoluto que supere el l&iacute;mite de
+                cr&eacute;dito autorizado, desde la primera fecha que
+                excedi&oacute; el l&iacute;mite hasta que se realice el pago
+                efectivo de dicho saldo. Este cargo no implicar&aacute;
+                autorizaci&oacute;n del sobregiro ni otorgamiento de facilidad
+                alguna.</span
+              >
+            </p>
+          </li>
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                ><strong>Intereses de moratorios.</strong></span
+              ><span style="font-size: small">
+                Cargos por intereses moratorios a una tasa que ser&aacute;
+                superior en dos puntos porcentuales a la tasa de inter&eacute;s
+                corriente que corresponda pagar, aplicable sobre la
+                porci&oacute;n de los pagos vencidos que corresponda a la
+                amortizaci&oacute;n, a partir de la fecha de vencimiento de pago
+                y hasta que se realice el pago efectivo.</span
+              >
+            </p>
+          </li>
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                ><strong>Cargo por pago con cheque incobrable.</strong></span
+              ><span style="font-size: small">
+                Cuando el pago de la cuota m&iacute;nima o cualquier pago, haya
+                sido realizado con un cheque que resulte incobrable librado
+                contra otro banco, se cargar&aacute; la comisi&oacute;n fijada
+                por el Banco girado y aquella que est&eacute; vigente para
+                situaciones de esta naturaleza, en el </span
+              ><span style="font-size: small"
+                ><em
+                  >Reglamento de Tarifas y Condiciones para los Servicios del
+                  Banco Naci&oacute;nal de Costa Rica</em
+                ></span
+              ><span style="font-size: small"
+                >, que ser&aacute; independiente a la que cobran por ese mismo
+                concepto otros Bancos o entidades financieras.</span
+              >
+            </p>
+          </li>
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                ><strong>Cobros Administrativos.</strong></span
+              ><span style="font-size: small">
+                Ser&aacute; tambi&eacute;n cargada a esta l&iacute;nea de
+                cr&eacute;dito los costos por gestiones de cobro en que hubiere
+                tenido que incurrir el Banco Emisor a causa del retraso del
+                Tarjetahabiente en el pago de los abonos mensuales por saldos
+                insolutos, o por arreglo de pago, sin perjuicio de las costas
+                personales y procesales que reconocer&aacute; y pagar&aacute; en
+                caso de haberse iniciado el cobro judicial de esta l&iacute;nea
+                de cr&eacute;dito revolutiva. Dicha comisi&oacute;n
+                corresponder&aacute; a aquella que est&eacute; establecida y
+                vigente en el </span
+              ><span style="font-size: small"
+                ><em
+                  >Reglamento de Tarifas y Condiciones para los Servicios del
+                  Banco Naci&oacute;nal de Costa Rica</em
+                ></span
+              ><span style="font-size: small">
+                durante el per&iacute;odo en que ocurra o se prolongue la
+                morosidad, y podr&aacute; ser ajustada conforme las variaciones
+                que se introduzcan en el mismo lo cual el tarjetahabiente
+                expresamente acepta.</span
+              >
+            </p>
+          </li>
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                ><strong>Costo de reposici&oacute;n de tarjeta.</strong></span
+              ><span style="font-size: small">
+                Para la reposici&oacute;n de la tarjeta de cr&eacute;dito por
+                causa de robo, extrav&iacute;o, destrucci&oacute;n,
+                inhabilitaci&oacute;n, o por cualquier otro motivo que
+                igualmente fuere imputable al Tarjetahabiente, el Banco Emisor
+                cobrar&aacute; el costo que al efecto tenga establecido a la
+                fecha de la reposici&oacute;n, seg&uacute;n el </span
+              ><span style="font-size: small"
+                ><em
+                  >Reglamento de Tarifas y Condiciones para los Servicios del
+                  Banco Naci&oacute;nal de Costa Rica</em
+                ></span
+              ><span style="font-size: small">.</span>
+            </p>
+          </li>
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                ><strong
+                  >Costo de investigaci&oacute;n de reclamos.</strong
+                ></span
+              ><span style="font-size: small">
+                En el caso de que el Tarjetahabiente objete su estado de cuenta
+                dentro del t&eacute;rmino establecido en este contrato y
+                solicite el o los </span
+              ><span style="font-size: small"
+                >comprobantes de alguna o algunas de sus transacciones, se
+                obliga a asumir los costos en que hubiere incurrido el Banco
+                Emisor para atender su reclamo. En caso de que su
+                reclamaci&oacute;n resultara procedente, dichos cargos
+                ser&aacute;n reversados.
+              </span>
+            </p>
+          </li>
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                ><strong
+                  >Pagos en nombre y por cuenta del Tarjetahabiente.</strong
+                ></span
+              ><span style="font-size: small">
+                Ser&aacute;n hechos con cargo a esta l&iacute;nea de
+                cr&eacute;dito aquellos pagos que en nombre y por cuenta del
+                Tarjetahabiente debiera efectuar el Banco Emisor, siguiendo sus
+                instrucciones.</span
+              >
+            </p>
+          </li>
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                ><strong>Cuotas pendientes de pago.</strong></span
+              ><span style="font-size: small">
+                En caso de que el Tarjetahabiente no pague oportunamente la suma
+                que indique su estado de cuenta, como pago m&iacute;nimo, se
+                efectuar&aacute; un cargo por servicio pendiente de pago en el
+                pr&oacute;ximo estado de cuenta.</span
+              >
+            </p>
+          </li>
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                ><strong>Costo del sistema de correo expreso.</strong></span
+              ><span style="font-size: small">
+                El costo que se derive de la utilizaci&oacute;n que tenga que
+                hacer el Banco Emisor para remitir cualquier informaci&oacute;n
+                al Tarjetahabiente por esta v&iacute;a.</span
+              >
+            </p>
+          </li>
+          <li>
+            <p class="western" align="justify">
+              <span style="font-size: small"
+                ><strong>Otros cargos.</strong></span
+              ><span style="font-size: small">
+                Cualquier otro costo imputable al Tarjetahabiente y que no se
+                contemple en los cargos antes citados, lo cual el
+                Tarjetahabiente declara aceptar en forma expresa.<br
+              /></span>
+            </p>
+          </li>
+        </ol>
+      </ol>
+
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>IMPUTACI&Oacute;N DE PAGOS.</strong></span
+            ><span style="font-size: small">
+              El Tarjetahabiente reconoce y acepta que el Banco Emisor se
+              reserve el derecho a la imputaci&oacute;n de pagos y proceda a
+              aplicar sus pagos para satisfacer por su orden, gastos, intereses,
+              comisiones y amortizaci&oacute;n de las sumas que haya dispuesto
+              en esta l&iacute;nea de cr&eacute;dito revolutiva, incluyendo los
+              sobregiros. En el caso de haberse iniciado el cobro judicial, se
+              pagar&aacute;n con preferencia los gastos y honorarios resultantes
+              de la presentaci&oacute;n de la demanda y despu&eacute;s los
+              indicados rubros, en el mismo orden antes se&ntilde;alado.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>PRESENTACI&Oacute;N DE FACTURAS.</strong></span
+            ><span style="font-size: small">
+              El Tarjetahabiente declara conocer y acepta que est&aacute; de
+              acuerdo en efectuar los pagos convenidos a favor del Banco Emisor,
+              para la cancelaci&oacute;n de las obligaciones que asuma al amparo
+              de este contrato, sin que &eacute;ste deba presentarle las
+              facturas suscritas por aqu&eacute;l, ni devolv&eacute;rselas una
+              vez canceladas.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>DESTRUCCI&Oacute;N DE DOCUMENTOS.</strong></span
+            ><span style="font-size: small">
+              El Tarjetahabiente autoriza al Banco Emisor a destruir las
+              facturas que suscriba y los documentos que firme despu&eacute;s de
+              que hayan sido pagados sus importes. No obstante, el Banco Emisor
+              se reserva el derecho de mantener tales documentos en sus archivos
+              por el tiempo que estime necesario.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong
+                >CR&Eacute;DITOS POR AJUSTE DE PRECIOS O DEVOLUCI&Oacute;N DE
+                BIENES O SERVICIOS.</strong
+              ></span
+            ><span style="font-size: small">
+              En caso de devoluci&oacute;n de mercanc&iacute;as o ajuste de
+              precios en los bienes o servicios pagados mediante la tarjeta de
+              cr&eacute;dito, si el comercio afiliado debiera efectuar un
+              reembolso a favor del Tarjetahabiente, el Banco Emisor no
+              aceptar&aacute; que se haga en efectivo; en su lugar, el comercio
+              afiliado podr&aacute; entregar dentro de los seis d&iacute;as
+              h&aacute;biles siguientes a la fecha del ajuste o
+              devoluci&oacute;n, una nota de cr&eacute;dito al Banco Emisor,
+              quien la aplicar&aacute; a la cuenta del Tarjetahabiente.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>ROBO O P&Eacute;RDIDA DE LA TARJETA.</strong></span
+            ><span style="font-size: small">
+              En caso de extrav&iacute;o, sustracci&oacute;n o p&eacute;rdida de
+              la tarjeta de cr&eacute;dito, el Tarjetahabiente se obliga a
+              notificar al Banco Emisor, en la forma siguiente:</span
+            >
+          </p>
+          <ol type="a">
+            <li>
+              <p class="western" align="justify">
+                <span style="font-size: small"
+                  >Cuando el hecho suceda en el territorio nacional, el
+                  Tarjetahabiente lo informar&aacute; al Banco Emisor, en
+                  primera instancia por la v&iacute;a telef&oacute;nica, o por
+                  cualquiera de los medios que &eacute;ste hubiere puesto a su
+                  disposici&oacute;n, y posteriormente por escrito
+                  dirigi&eacute;ndose a cualquiera de las oficinas del Banco
+                  Emisor.</span
+                >
+              </p>
+            </li>
+            <li>
+              <p class="western" align="justify">
+                <span style="font-size: small"
+                  >Cuando el hecho suceda en el extranjero, el Tarjetahabiente
+                  lo comunicar&aacute; a cualquiera de los Bancos de la
+                  localidad afiliados al sistema de la Franquicia Internacional
+                  correspondiente y har&aacute; notificaci&oacute;n por la
+                  v&iacute;a telef&oacute;nica a las oficinas del Banco Emisor,
+                  en cuyo caso deber&aacute; identificarse por los medios que
+                  &eacute;ste considere necesarios o convenientes.</span
+                >
+              </p>
+            </li>
+          </ol>
+          <ol start="3" type="a">
+            <li>
+              <p class="western" align="justify">
+                <span style="font-size: small"
+                  >Mientras el Banco Emisor no reciba comunicaci&oacute;n o
+                  notificaci&oacute;n al respecto, en cualquiera de los
+                  supuestos antes indicados, el Tarjetahabiente ser&aacute;
+                  responsable de todas las transacciones que aparecieren
+                  asociadas al uso de la tarjeta o tarjetas de cr&eacute;dito
+                  emitidas contra esta l&iacute;nea revolutiva.</span
+                >
+              </p>
+            </li>
+            <li>
+              <p class="western" align="justify">
+                <span style="font-size: small"
+                  >No obstante que el Banco Emisor bloquee la respectiva cuenta
+                  a solicitud del Tarjetahabiente, &eacute;ste podr&aacute;
+                  objetar formalmente y por escrito en un plazo no mayor a 20
+                  d&iacute;as naturales contados a partir de la fecha de corte
+                  de su cuenta, cualesquiera de las transacciones que no le
+                  pertenezcan y que sean de fecha y hora posterior al reporte o
+                  notificaci&oacute;n que hubiere hecho al Banco Emisor del
+                  extrav&iacute;o, sustracci&oacute;n o p&eacute;rdida de la
+                  tarjeta. Si tal reclamo no se produce dentro del plazo
+                  establecido, se entiende que el Tarjetahabiente acepta estas
+                  transacciones.</span
+                >
+              </p>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>RETIRO DE TARJETAS.</strong></span
+            ><span style="font-size: small">
+              El Tarjetahabiente declara conocer y acepta en forma expresa que
+              el Banco Emisor podr&aacute; girar instrucciones o solicitudes,
+              para que cualquier afiliado al sistema de la Franquicia
+              Internacional a la que se encuentra asociada la tarjeta, proceda a
+              retirar de circulaci&oacute;n su tarjeta de cr&eacute;dito o las
+              adicionales, cuando por cualquier causa hubiere que cancelar
+              anticipadamente la l&iacute;nea de cr&eacute;dito o venciere el
+              plazo de la misma. El Tarjetahabiente queda obligado a rembolsar
+              al Banco Emisor el monto que &eacute;ste haya debido pagar a los
+              afiliados u otros emisores, por la retenci&oacute;n de la
+              tarjeta.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>TARJETAS ADICIONALES.</strong></span
+            ><span style="font-size: small">
+              El Tarjetahabiente declara conocer y aceptar en forma expresa, que
+              las estipulaciones contenidas en las cl&aacute;usulas del presente
+              contrato ser&aacute;n aplicables a todas y cada una de las
+              tarjetas adicionales de cr&eacute;dito con el Banco Naci&oacute;nal de Costa Rica,
+              y relacionadas con la Franquicia Internacional que &eacute;ste
+              disponga, y que por cuenta y mediante autorizaci&oacute;n suya el
+              Banco Emisor expida a terceros para que sean utilizadas con cargo
+              a esta l&iacute;nea de cr&eacute;dito revolutiva; aceptando para
+              s&iacute; la imputaci&oacute;n de todas las acciones y cargos que
+              estuvieren relacionados con las mismas.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>CAMBIO EN LAS CONDICIONES DEL SERVICIO.</strong></span
+            ><span style="font-size: small">
+              Los servicios bancarios deben estar sometidos a procedimientos
+              din&aacute;micos, sujetos a constante innovaci&oacute;n y mejora,
+              que exigen de ajustes tanto para su subsistencia como para el
+              aprovechamiento de nuevas tecnolog&iacute;as, as&iacute; como para
+              dotarlos de seguridades adicionales. En virtud de lo anterior, el
+              Banco queda facultado para revisar y ajustar las condiciones de
+              prestaci&oacute;n de los servicios, y los montos de las tarifas
+              cuando se haga necesaria alguna modificaci&oacute;n en las
+              pol&iacute;ticas o regulaciones internas. Cuando ocurra alguno de
+              estos cambios, el Banco se obliga a hacerlo del conocimiento del
+              cliente por la v&iacute;a que &eacute;ste haya elegido al efecto
+              con dos meses de anticipaci&oacute;n a su entrada en vigencia,
+              para que manifieste si las acepta o no. El cliente declara </span
+            ><span style="font-size: small"
+              >conocer y acepta que, si vencido este plazo &eacute;l no enviare
+              comunicaci&oacute;n alguna, el Banco podr&aacute; asumir su
+              silencio como una manifestaci&oacute;n de conformidad, sin
+              perjuicio de que en cualquier momento pueda invocar la
+              terminaci&oacute;n anticipada y voluntaria del contrato.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>TERMINACI&Oacute;N ANTICIPADA VOLUNTARIA.</strong></span
+            ><span style="font-size: small">
+              En cualquier momento, cualquiera de las partes podr&aacute; dar
+              por terminado el contrato, siempre y cuando lo notifique a la otra
+              en forma escrita con al menos quince d&iacute;as de
+              anticipaci&oacute;n. Independientemente de cu&aacute;l de las
+              partes tome tal decisi&oacute;n, deber&aacute;n quedar totalmente
+              canceladas las comisiones y costos pendientes de pago por parte
+              del cliente.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong
+                >OTRAS CAUSAS DE TERMINACI&Oacute;N ANTICIPADA.</strong
+              ></span
+            ><span style="font-size: small">
+              Ser&aacute;n contempladas como causas para dar por terminada en
+              cualquier momento la relaci&oacute;n, sin responsabilidad de
+              cualquiera de las partes que la invoque, y sin necesidad de
+              requerimientos previos, los siguientes supuestos:</span
+            >
+          </p>
+          <ol start="26">
+            <ol type="a">
+              <li>
+                <p class="western" align="justify">
+                  <span style="font-size: small"
+                    >La falta oportuna de pago de una sola de las mensualidades
+                    convenidas, o cualquier exceso en el l&iacute;mite del
+                    cr&eacute;dito por causas imputables al Tarjetahabiente,
+                    para lo cual el Tarjetahabiente y garantes renuncian a los
+                    requerimientos de pago y a su domicilio. Si se tratase de
+                    garant&iacute;as reales, tambi&eacute;n renuncian a los
+                    tr&aacute;mites del proceso ejecutivo, oblig&aacute;ndose a
+                    pagar en todos los casos indicados, intereses de mora
+                    conforme a lo estipulado y las costas personales y
+                    procesales de la eventual ejecuci&oacute;n.</span
+                  >
+                </p>
+              </li>
+            </ol>
+          </ol>
+          <ol start="26">
+            <ol start="2" type="a">
+              <li>
+                <p class="western">
+                  <span style="font-size: small"
+                    >Cuando hubiere incumplimiento de cualesquiera de las
+                    disposiciones estipuladas en el contrato o en las normas que
+                    lo regulen.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="western">
+                  <span style="font-size: small"
+                    >Cuando a juicio del Banco Emisor el Cliente o alguno de sus
+                    autorizados utilice el servicio o la tarjeta en forma
+                    inadecuada o ajena al marco o a los fines establecidos en
+                    este contrato.</span
+                  >
+                </p>
+              </li>
+            </ol>
+          </ol>
+          <ol start="26">
+            <ol start="4" type="a">
+              <li>
+                <p class="western">
+                  <span style="font-size: small"
+                    >Cuando el Banco tenga noticias de acciones del cliente que,
+                    a su criterio, pongan en duda la seguridad del
+                    servicio.</span
+                  >
+                </p>
+              </li>
+            </ol>
+          </ol>
+          <ol start="26">
+            <ol start="5" type="a">
+              <li>
+                <p class="western">
+                  <span style="font-size: small"
+                    >Cuando concurra caso fortuito, fuerza mayor o hecho de un
+                    tercero que haga riesgosa la actividad.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="western">
+                  <span style="font-size: small"
+                    >Por cualquier otra causa que objetivamente considerada,
+                    haga la continuaci&oacute;n del servicio inconveniente,
+                    oneroso, poco rentable o lesivo a sus intereses.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="western">
+                  <span style="font-size: small"
+                    >Cuando el Cliente sin raz&oacute;n justificada, omita
+                    brindar los datos necesarios para mantener actualizados sus
+                    registros en la cuenta.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="western">
+                  <span style="font-size: small"
+                    >Cuando no se cancelaren los costos por tarifas y comisiones
+                    de los Servicios conforme se ha dispuesto en la
+                    contrataci&oacute;n</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="western">
+                  <span style="font-size: small"
+                    >Cuando el Cliente o garantes no efect&uacute;en u otorguen
+                    los ajustes modificaciones, actos o contratos que sean
+                    necesarios a juicio del Banco Emisor, para la
+                    constituci&oacute;n o vigencia de las garant&iacute;as, a
+                    satisfacci&oacute;n del Banco Emisor.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="western">
+                  <span style="font-size: small"
+                    >Si las garant&iacute;as constituidas para seguridad de la
+                    obligaci&oacute;n se destruyeren, perdieren o desmejoraren
+                    sin que el Cliente las sustituya o d&eacute; un aumento de
+                    ellas a satisfacci&oacute;n del Banco Emisor.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="western">
+                  <span style="font-size: small"
+                    >Cuando ocurra el fallecimiento o fuere declarada
+                    judicialmente por sentencia firme la incapacidad del cliente
+                    persona f&iacute;sica.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="western">
+                  <span style="font-size: small"
+                    >Cuando la persona jur&iacute;dica se disolviere por
+                    cualquier causa, fuera declarada en quiebra o se acogiere a
+                    las diligencias de Administraci&oacute;n y
+                    Reorganizaci&oacute;n por intervenci&oacute;n Judicial o a
+                    cualquier otro proceso concursal, venciere su plazo social o
+                    el de la vigencia de sus representantes, apoderados o
+                    mandatarios sin que se haya ampliado el plazo de estos
+                    nombramientos o se hayan nombrado otros apoderados.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="western">
+                  <span style="font-size: small"
+                    >Cuando el Cliente no acepte las nuevas condiciones de
+                    prestaci&oacute;n del servicio conforme las facultades
+                    aqu&iacute; otorgadas al Banco Emisor para variarlas.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="western">
+                  <span style="font-size: small"
+                    >Cuando ocurriera la terminaci&oacute;n del contrato,
+                    cualquiera que sea el motivo, el Tarjetahabiente queda
+                    obligado a devolver en forma inmediata al Banco Emisor la
+                    tarjeta o tarjetas de cr&eacute;dito, ya que las mismas son
+                    de su propiedad. Los documentos que haya firmado el
+                    Tarjetahabiente con sus correspondientes garant&iacute;as
+                    ser&aacute;n devueltos cuarenta y cinco d&iacute;as
+                    naturales despu&eacute;s de la devoluci&oacute;n de la o las
+                    tarjetas de cr&eacute;dito, y del pago </span
+                  ><span style="font-size: small"
+                    >total que muestre su cuenta. Ese plazo se contar&aacute; a
+                    partir de la fecha en que ocurran ambos eventos, sea la
+                    entrega de los pl&aacute;sticos y el pago total de lo
+                    adeudado.&nbsp;</span
+                  >
+                </p>
+              </li>
+            </ol>
+          </ol>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong
+                >PROCEDIMIENTOS PARA EL EVENTUAL COBRO COMPULSIVO DE LA
+                OBLIGACI&Oacute;N.</strong
+              ></span
+            ><span style="font-size: small">
+              Las partes contratantes convienen y aceptan expresamente que el
+              Banco Emisor podr&aacute; cobrar al Tarjetahabiente cualquier
+              saldo deudor a cargo de &eacute;stos mediante proceso ejecutivo,
+              con base en certificaci&oacute;n emitida al efecto por un contador
+              p&uacute;blico autorizado, conforme a lo establecido en el
+              art&iacute;culo 611, p&aacute;rrafo segundo del C&oacute;digo de
+              Comercio. Si se hubiesen otorgado garant&iacute;as reales a favor
+              del Banco Emisor, el saldo que resulte y se certifique por el
+              medio antes se&ntilde;alado, podr&aacute; ser exigido mediante la
+              v&iacute;a compulsiva por medio de la ejecuci&oacute;n de la
+              garant&iacute;a otorgada, caso en el cual el deudor y garantes
+              renuncian a su domicilio, requerimientos de pago y los
+              tr&aacute;mites del juicio ejecutivo.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong
+                >SOLICITUD DE AFILIACI&Oacute;N A LOS SERVICIOS
+                ELECTR&Oacute;NICOS</strong
+              ></span
+            ><span style="font-size: small"
+              >. El Tarjetahabiente solicita y el Banco acepta tenerlo como
+              afiliado a los servicios de Banca Electr&oacute;nica que sean
+              compatibles con el servicio de tarjeta de cr&eacute;dito. En tal
+              caso el Tarjetahabiente declara conocer y aceptar la normativa
+              contenida en el </span
+            ><span style="font-size: small"
+              ><em
+                >Reglamento de Banca Electr&oacute;nica del Banco de Costa
+                Rica</em
+              ></span
+            ><span style="font-size: small"
+              >, del cual se le entrega copia en este acto.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>DE LA COBERTURA DE SEGURO SALDOS DEUDORES:</strong></span
+            ><span style="font-size: small">
+              Ambas partes declaran conocer y aceptan que en atenci&oacute;n a
+              las restricciones que resultan del </span
+            ><span style="font-size: small"
+              ><em
+                >Reglamento de Tarjetas de Cr&eacute;dito y D&eacute;bito,</em
+              ></span
+            ><span style="font-size: small">
+              el Banco Emisor ha dispuesto no tomar por su cuenta una
+              p&oacute;liza colectiva de saldos deudores, por lo que este
+              servicio no apareja ninguna cobertura para esos prop&oacute;sitos;
+              y que por el contrario, de conformidad con las disposiciones de
+              dicho reglamento, luego de informar adecuadamente al CLIENTE, lo
+              insta para que en forma individual, por su cuenta y cargo, proceda
+              a contratar un seguro de saldos deudores con las aseguradoras, los
+              intermediarios de seguros y servicios auxiliares de su
+              preferencia, contrataci&oacute;n sobre cuya existencia y contenido
+              el CLIENTE deber&aacute; informar al Banco Emisor.&rdquo;</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong
+                >COMPROMISO Y AUTORIZACI&Oacute;N PARA LA ACTUALIZACI&Oacute;N
+                DE DATOS</strong
+              ></span
+            ><span style="font-size: small"
+              >. De conformidad con la normativa vigente El cliente declara
+              conocer que las entidades financieras conforme a lo que establece
+              la </span
+            ><span style="font-size: small"
+              ><em
+                >Ley Sobre Estupefacientes, Sustancias Psicotr&oacute;picas,
+                Drogas de Uso no Autorizado, Actividades Conexas,
+                Legitimaci&oacute;n de Capitales y Financiamiento al
+                Terrorismo</em
+              ></span
+            ><span style="font-size: small"
+              >, y la normativa que la complementa, est&aacute;n en la
+              obligaci&oacute;n de mantener actualizada la informaci&oacute;n de
+              sus clientes, por lo que peri&oacute;dicamente le requerir&aacute;
+              presentarse a actualizar sus datos. De igual forma declara conocer
+              y acepta, que cuando se le dirija alg&uacute;n requerimiento para
+              estos fines, estar&aacute; en el deber de suministrar dentro del
+              plazo que se le otorgar&aacute; al efecto, toda la
+              informaci&oacute;n que le fuere requerida, y que ante su
+              incumplimiento, el Banco podr&aacute; invocar una causa de
+              terminaci&oacute;n anticipada del contrato, lo que
+              implicar&aacute; poner fin al negocio o servicio. Sin perjuicio de
+              lo anterior, el cliente y fiador(es) en forma expresa autoriza al
+              Banco para que en su nombre y representaci&oacute;n pueda
+              solicitar la informaci&oacute;n personal que sea necesaria para
+              actualizar sus datos, requiri&eacute;ndola a cualquier base de
+              datos p&uacute;blica o privada nacional o extranjera, a cualquier
+              otra entidad financiera, a cualquier oficina, &oacute;rgano o ente
+              de la administraci&oacute;n p&uacute;blica, o a cualquier sujeto
+              p&uacute;blico o privado a quien &eacute;ste se la hubiere
+              suministrado. Esta autorizaci&oacute;n implica un relevo del deber
+              de confidencialidad que pueda caberle al depositario de la
+              informaci&oacute;n conforme aqu&iacute; lo declara y acepta el
+              cliente, relev&aacute;ndolo de toda responsabilidad por el
+              suministro que realice de sus datos a solicitud del Banco de Costa
+              Rica.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong
+                >CONSENTIMIENTO PARA LA UTILIZACION DE DATOS.</strong
+              ></span
+            ><span style="font-size: small">
+              El titular de este servicio acepta y da su consentimiento en forma
+              expresa para que todos los datos personales que ha suministrado
+              directa o indirectamente para la contrataci&oacute;n del mismo,
+              as&iacute; como aquellos a los que el Banco llegue a tener acceso
+              para su implementaci&oacute;n en diversas fuentes tales como,
+              consultas, operaciones, transacciones, contrataci&oacute;n de
+              productos y servicios, procesos administrativos o judiciales, sean
+              almacenados y procesados directamente por el Banco Naci&oacute;nal de Costa Rica y
+              sus Subsidiarias o por terceros contratos por &eacute;stos, para
+              ser incluidos en los sistemas o bases de datos del Conglomerado
+              BCR, declarando conocer y aceptar: a) que los mismos ser&aacute;n
+              utilizados con el fin de seguir manteniendo y gestionando la
+              relaci&oacute;n contractual establecida en virtud del presente
+              contrato; b) que dichos datos puedan ser utilizados a efecto de
+              darle a conocer y ofrecerle cualquiera de los servicios
+              financieros y afines a las actividades desarrolladas por dicho
+              Conglomerado, c) que su informaci&oacute;n personal relacionada
+              con cualquiera de </span
+            ><span style="font-size: small"
+              >estos servicios podr&aacute; ser suministrada y compartida con
+              otras bases de datos autorizadas y reguladas por la
+              Superintendencia General de Entidades Financieras,
+              Superintendencia General de Valores, Superintendencia de
+              Pensiones, Superintendencia General de Seguros, o el Consejo
+              Nacional de Supervisi&oacute;n del Sistema Financiero. Finalmente
+              manifiesta haber sido advertido y conocer de su derecho de acceso
+              y rectificaci&oacute;n respecto de sus datos personales en los
+              t&eacute;rminos previstos en la Ley de Protecci&oacute;n de la
+              Persona frente al Tratamiento de sus Datos Personales No.8968, y
+              que puede ejercitar estos derechos por escrito mediante carta
+              acompa&ntilde;ada de copia del documento de identidad y dirigida a
+              la oficina del Banco Naci&oacute;nal de Costa Rica m&aacute;s cercana.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>COMPROMISO ARBITRAL.</strong></span
+            ><span style="font-size: small">
+              Todas las controversias, diferencias, disputas o reclamos que
+              pudieran derivarse del presente contrato, negocio y la materia a
+              la que este se refiere, su ejecuci&oacute;n, incumplimiento,
+              liquidaci&oacute;n, interpretaci&oacute;n o validez, obligaciones
+              y responsabilidades derivadas del mismo, podr&aacute;n ser
+              resueltas de conformidad con la </span
+            ><span style="font-size: small"
+              ><em>Ley de Resoluci&oacute;n Alternativa de Conflictos</em></span
+            ><span style="font-size: small">
+              para lo cual las partes conforme a las reglas all&iacute;
+              estipuladas escoger&aacute;n o designar&aacute;n de com&uacute;n
+              acuerdo a los mediadores o conciliadores y al Tribunal Arbitral,
+              pudiendo recurrir a cualquier centro dedicado a la
+              tramitaci&oacute;n de este tipo de procedimiento. Esta
+              disposici&oacute;n no implicar&aacute; sin embargo una renuncia al
+              derecho a acudir a la jurisdicci&oacute;n ordinaria, por lo que
+              deber&aacute; ser complementada con el necesario acuerdo arbitral
+              una vez que las partes dispongan acogerse a ella para la
+              decisi&oacute;n de alguna controversia concreta.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="western" align="justify">
+            <span style="font-size: small"
+              ><strong>DISPOSICIONES GENERALES.</strong></span
+            ><span style="font-size: small">
+              Las partes convienen y expresamente aceptan que:</span
+            >
+          </p>
+          <ol start="33">
+            <ol type="a">
+              <li>
+                <p class="western" align="justify">
+                  <span style="font-size: small"
+                    >Este servicio se halla regulado de conformidad con las
+                    disposiciones de los Reglamentos: </span
+                  ><span style="font-size: small"
+                    ><em
+                      >Reglamento de tarifas y condiciones de los servicios del
+                      BCR</em
+                    ></span
+                  ><span style="font-size: small">, </span
+                  ><span style="font-size: small"
+                    ><em
+                      >Reglamento para los Servicios de Banca
+                      Electr&oacute;nica</em
+                    ></span
+                  ><span style="font-size: small"> y </span
+                  ><span style="font-size: small"
+                    ><em
+                      >Reglamento para el tr&aacute;mite de reclamos
+                      administrativos</em
+                    ></span
+                  ><span style="font-size: small">
+                    en el Conglomerado BCR las cu&aacute;les son parte integral
+                    de esta contrataci&oacute;n.</span
+                  ><span style="font-size: small"><em> </em></span
+                  ><span style="font-size: small"
+                    >Las condiciones para su apertura, funcionamiento y
+                    operaci&oacute;n ser&aacute;n las que all&iacute; se
+                    establezcan, y las variaciones que en ellos se introduzcan,
+                    ser&aacute;n aplicables al mismo desde el momento en que
+                    entren en vigencia. En armon&iacute;a con lo anterior, el
+                    Banco se compromete a estregar al cliente a trav&eacute;s
+                    del medio que &eacute;l hubiere elegido, copia todos los
+                    reglamentos asociados al servicio, y comunicarle
+                    oportunamente conforme aqu&iacute; se establece, las
+                    variaciones que a los mismos se realicen.</span
+                  >
+                </p>
+              </li>
+            </ol>
+          </ol>
+          <ol start="33">
+            <ol start="2" type="a">
+              <li>
+                <p class="western" align="justify">
+                  <span style="font-size: small"
+                    >El cliente se obliga a registrar ante el Banco la
+                    direcci&oacute;n o medio, preferiblemente
+                    electr&oacute;nico, donde atender comunicaciones, y queda
+                    obligado a notificar cualquier cambio de &eacute;stos cada
+                    vez que se produzca. Cualquier comunicaci&oacute;n que se le
+                    env&iacute;e a la direcci&oacute;n o medio que est&eacute;
+                    registrado en el Banco, se reputar&aacute; recibida por el
+                    cliente, a&uacute;n cuando por deficiencia o error de
+                    &eacute;ste al registrarlos, o por haberlos cambiado sin
+                    notificarle al Banco, no le fuera efectivamente
+                    entregada.</span
+                  >
+                </p>
+              </li>
+            </ol>
+          </ol>
+          <ol start="33">
+            <ol start="3" type="a">
+              <li>
+                <p class="western" align="justify">
+                  <span style="font-size: small"
+                    >El presente contrato se celebra en consideraci&oacute;n a
+                    las condiciones y cualidades de las partes y en
+                    consecuencia, ninguna de ellas podr&aacute; cederlo total o
+                    parcialmente o hacerse sustituir por terceros en el
+                    ejercicio de los derechos o en el cumplimiento de las
+                    obligaciones que en &eacute;l constan, sin previa
+                    autorizaci&oacute;n escrita de la otra</span
+                  >
+                </p>
+              </li>
+            </ol>
+          </ol>
+          <ol start="33">
+            <ol start="4" type="a">
+              <li>
+                <p class="western" align="justify">
+                  <span style="font-size: small"
+                    >La informaci&oacute;n que el Banco reciba del cliente y
+                    aquella que llegue a obtener como consecuencia de este
+                    contrato, deber&aacute; mantenerse bajo la m&aacute;s
+                    estricta confidencialidad, y en consecuencia, no
+                    podr&aacute; ser divulgada ni total ni parcialmente a
+                    ning&uacute;n tercero no autorizado por su titular. Dicha
+                    Informaci&oacute;n ser&aacute; tratada con absoluta reserva
+                    y solo podr&aacute; ser empleada para los fines expresamente
+                    autorizados por el cliente. El Banco ser&aacute;
+                    solidariamente responsable con sus funcionarios empleados o
+                    agentes, por la divulgaci&oacute;n no autorizada as&iacute;
+                    como de las consecuencias que puedan derivarse de la
+                    utilizaci&oacute;n indebida o abusiva de esta
+                    Informaci&oacute;n. No constituir&aacute; ning&uacute;n
+                    quebranto a esta obligaci&oacute;n, el suministro de
+                    informaci&oacute;n que el Banco tuviere que hacer a
+                    requerimiento o mandato de autoridades competentes.</span
+                  >
+                </p>
+              </li>
+            </ol>
+          </ol>
+          <ol start="33">
+            <ol start="5" type="a">
+              <li>
+                <p class="western" align="justify">
+                  <span style="font-size: small"
+                    >En lo no previsto en este contrato se aplicar&aacute;n,
+                    seg&uacute;n la escala jer&aacute;rquica de las fuentes, las
+                    disposiciones y cuerpos normativos citados en la
+                    introducci&oacute;n con sus modificaciones y reformas en
+                    cada caso, las cuales se tendr&aacute;n por incorporadas al
+                    mismo sin necesidad de que se modifique en cada
+                    ocasi&oacute;n.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="western" align="justify">
+                  <span style="font-size: small"
+                    >Para la interpretaci&oacute;n y cumplimiento del presente
+                    contrato, as&iacute; como para cualquier acci&oacute;n
+                    judicial y extrajudicial que se derive del mismo, las partes
+                    se someten a la Legislaci&oacute;n Costarricense.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="western" align="justify">
+                  <span style="font-size: small"
+                    >Los reclamos administrativos presentados ante el Banco por
+                    el titular de este servicio, y relacionados con la
+                    ejecuci&oacute;n del presente contrato, ser&aacute;n
+                    tramitados y se resolver&aacute;n con apego al&nbsp;</span
+                  ><span style="font-size: small"
+                    ><em
+                      >Reglamento para el Tr&aacute;mite de Reclamos
+                      Administrativos del Banco Naci&oacute;nal de Costa Rica</em
+                    ></span
+                  ><span style="font-size: small"
+                    >. Las responsabilidades si las hubiere, se
+                    determinar&aacute;n con</span
+                  ><span style="font-size: small"><em> </em></span
+                  ><span style="font-size: small"
+                    >arreglo a la letra del contrato o a lo que disponga el
+                    Ordenamiento Jur&iacute;dico vigente.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="western" align="justify">
+                  <span style="font-size: small"
+                    >Cualquier suma que adeudara el cliente al Banco con motivo
+                    de la prestaci&oacute;n de este servicio y al finalizar el
+                    mismo, podr&aacute; ser compensada por &eacute;ste con
+                    d&eacute;bito a cualquiera de las cuentas a nombre del
+                    cliente lo cual este autoriza en forma expresa; aceptando
+                    adem&aacute;s que los saldos que reporte el Banco en su
+                    registros electr&oacute;nicos o f&iacute;sicos referidos a
+                    dicho servicio, son los reales y efectivos, por lo que el
+                    documento que as&iacute; lo consigne y la suma que refleje,
+                    es demostrativo del saldo que &eacute;l es en deberle a la
+                    Instituci&oacute;n, documento que &eacute;l acepta y
+                    reconoce para todos los efectos legales, administrativos y
+                    judiciales.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="western" align="justify">
+                  <span style="font-size: small"
+                    >Los asientos contables, las bit&aacute;coras, los estados
+                    de cuenta, los n&uacute;meros de autorizaci&oacute;n, las
+                    fichas, registros o documentos que se generen con motivo de
+                    la prestaci&oacute;n del servicio, as&iacute; como las
+                    dem&aacute;s constancias documentales derivadas del mismo,
+                    mientras no sean desacreditados, har&aacute;n plena prueba
+                    de la existencia y validez de las transacciones y
+                    operaciones realizadas a trav&eacute;s de los servicios
+                    contratados.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="western" align="justify">
+                  <span style="font-size: small"
+                    >Las partes rec&iacute;procamente se autorizan para que
+                    cualquiera de ellas sin necesidad de autorizaci&oacute;n
+                    previa de la otra (s), comparezca ante Notario
+                    P&uacute;blico a dotar el contrato con la raz&oacute;n de
+                    fecha cierta.</span
+                  >
+                  <span style="font-size: small">&nbsp;</span>
+                </p>
+              </li>
+            </ol>
+          </ol>
+        </li>
+
+    </li>
+
+      <li>
+        <p class="western">
+          <span style="font-size: small"
+            ><strong
+              >MEDIOS PARA RECIBIR COMUNICACIONES Y DOMICILIO
+              CONTRACTUAL.</strong
+            ></span
+          >
+        </p>
+      </li>
+
+
+</ol>
+<p class="western" style="padding-left: 120px" align="justify">
+  <span style="font-size: small"
+    >Para todos los efectos de este contrato, el cliente se&ntilde;ala como
+    medio para recibir comunicaciones e informaciones relacionadas con este
+    contrato, <strong>{{media}}</strong>.</span
+  >
+</p>
+<p class="western" style="padding-left: 120px" align="justify">
+  <span style="font-size: small">Asimismo, de conformidad con la </span
+  ><span style="font-size: small"
+    ><em>Ley de Notificaciones Judiciales</em></span
+  ><span style="font-size: small">
+    se&ntilde;ala como domicilio para recibir notificaciones judiciales en caso
+    de incumplimiento <strong>{{address}}</strong>.</span
+  >
+</p>
+<p class="western" style="padding-left: 120px" align="justify">
+  <span style="font-size: small"
+    >El Banco por su parte se&ntilde;ala como domicilio el establecido en el
+    art&iacute;culo 5 de la L</span
+  ><span style="font-size: small"
+    ><em>ey Org&aacute;nica del Sistema Bancario Nacional</em></span
+  ><span style="font-size: small">.</span>
+</p>
+<p class="western" style="padding-left: 120px" align="justify">
+  <span style="font-size: small"
+    >Cualquier comunicaci&oacute;n que se le env&iacute;e a la direcci&oacute;n
+    o medio que est&eacute; registrado en el Banco, se reputar&aacute; recibida
+    por el cliente, aun cuando por deficiencia o error de &eacute;ste al
+    registrarlos, o por haberlos cambiado sin notificarle al Banco, no le fuera
+    efectivamente entregada.</span
+  >
+</p>
+<ol start="35">
+      <li>
+        <p class="western" align="justify">
+          <span style="font-size: small"
+            ><strong>CONSENTIMIENTO INFORMADO:</strong></span
+          ><span style="font-size: small">
+            El Cliente y fiador(es), cuando proceda, manifiestan que han sido
+            informados de manera clara, veraz, oportuna y suficiente sobre las
+            particularidades de este servicio, que ha recibido copia de toda la
+            normativa reglamentaria del Banco asociada a &eacute;l, que, con esa
+            informaci&oacute;n, conscientemente han aceptado las condiciones de
+            esta contrataci&oacute;n, asumiendo sus deberes y obligaciones
+            frente al Banco.</span
+          >
+        </p>
+      </li>
+
+</ol>
+<p class="western" style="padding-left: 40px">
+  
+  <span style="font-size: small"
+    >En fe de lo anterior, firmamos en _________________ a los ______
+    d&iacute;as del mes de _________ del __________.<br /><br /><img
+      src="data:image/png;base64,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"
+      alt="Descripción de la imagen"
+      width="400" />
+    <br
+  /></span>
+</p>
+<p class="western" style="text-align: right">
+  <span style="font-family: Segoe UI, serif"
+    ><span style="font-size: xx-small">CSB-TJT-CON-886-12_V7</span></span
+  >
+</p>
+<p class="western" style="padding-left: 120px">
+  <span style="font-size: small">&nbsp;</span>
+</p>
